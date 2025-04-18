@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #7B6EF6; /* Soft violet from logo */
+    --secondary-color: #ECE9FD; /* Very light lavender */
+    --text-color: #3F3D56; /* Dark desaturated purple for contrast */
+    --background-gradient: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    --white: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px var(--shadow-color);
+    max-width: 90%;
+    width: 400px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.gif-container {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-link {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.update-notes {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.update-notes h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.update-notes p {
+    font-size: 1em;
+    margin: 5px 0;
+}
