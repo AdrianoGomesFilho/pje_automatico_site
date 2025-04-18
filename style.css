@@ -13,9 +13,11 @@ body {
     background: var(--background-gradient);
     color: var(--text-color);
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack containers vertically */
+    justify-content: flex-start; /* Align containers at the top */
     align-items: center;
     height: 100vh;
+    overflow-y: auto; /* Enable scrolling if content exceeds viewport */
 }
 
 .container {
@@ -25,8 +27,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 6px 15px var(--shadow-color);
     max-width: 90%;
-    width: 400px;
-    margin: 20px auto;
+    width: 600px;
+    margin: 20px 0; /* Add vertical spacing between containers */
 }
 
 h1 {
@@ -58,12 +60,47 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Reduced height for better fit */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
 }
 
 .gif-container img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the GIF fits within the container */
     border-radius: 10px;
+}
+
+.gif-explanation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gif-explanation figure {
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    width: 100%; /* Ensure figures take up the full width of the container */
+}
+
+.gif-explanation img {
+    max-width: 90%; /* Reduced max width for better fit */
+    height: auto;
+    object-fit: contain; /* Ensure the GIFs fit within their container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.gif-explanation figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--text-color);
 }
 
 header h1 {
