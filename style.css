@@ -134,7 +134,7 @@ header h1 {
 }
 
 .update-notes {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: left;
 }
 
@@ -159,4 +159,8 @@ header h1 {
     box-shadow: 0 4px 10px var(--shadow-color);
     font-weight: bold; /* Make the text stand out */
     line-height: 1.5; /* Improve text spacing */
+}
+
+.redes_sociais {
+    text-align: center;
 }
