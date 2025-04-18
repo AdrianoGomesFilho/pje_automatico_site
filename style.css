@@ -11,12 +11,15 @@ body {
     margin: 0;
     padding: 0;
     background: var(--background-gradient);
+    background-repeat: no-repeat; /* Prevent gradient repetition */
+    background-size: cover; /* Ensure gradient covers the viewport */
+    background-attachment: fixed; /* Make the gradient fixed across the page */
     color: var(--text-color);
     display: flex;
     flex-direction: column; /* Stack containers vertically */
     justify-content: flex-start; /* Align containers at the top */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure the gradient spans the full page height */
     overflow-y: auto; /* Enable scrolling if content exceeds viewport */
 }
 
@@ -115,15 +118,19 @@ header h1 {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 15px 0;
+    padding: 15px 25px; /* Increased padding for a more prominent button */
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    margin: 20px 0; /* Add spacing around the button */
+    font-size: 1.1em; /* Slightly larger font size */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Add a subtle shadow */
     transition: all 0.3s ease;
 }
 
 .download-link:hover {
-    background: var(--secondary-color);
+    background: var(--secondary-color); /* Softer hover effect */
     color: var(--text-color);
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px var(--shadow-color); /* Enhance shadow on hover */
 }
 
 .update-notes {
@@ -139,4 +146,17 @@ header h1 {
 .update-notes p {
     font-size: 1em;
     margin: 5px 0;
+}
+
+.prerequisites {
+    font-size: 1.2em;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    padding: 15px 20px; /* Increased padding for better readability */
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    font-weight: bold; /* Make the text stand out */
+    line-height: 1.5; /* Improve text spacing */
 }
