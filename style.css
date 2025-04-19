@@ -149,16 +149,10 @@ header h1 {
 }
 
 .prerequisites {
-    font-size: 1.2em;
-    color: var(--text-color);
-    background: var(--secondary-color);
-    padding: 15px 20px; /* Increased padding for better readability */
-    border-radius: 10px;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #240356; /* Subtle text color */
+    margin-top: 10px;
     text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    font-weight: bold; /* Make the text stand out */
-    line-height: 1.5; /* Improve text spacing */
 }
 
 .redes_sociais {

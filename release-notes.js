@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
+            const releaseDate = new Date(data.published_at);
+            const formattedDate = releaseDate.toLocaleDateString("pt-BR"); // Format as DD/MM/YYYY
             const releaseNotes = `
-                <strong>${data.name}</strong> (${new Date(data.published_at).toLocaleDateString()}): 
+                <strong>${data.name}</strong> (${formattedDate}): 
                 ${data.body.replace(/\n/g, "<br>")}
             `;
             releaseNotesElement.innerHTML = releaseNotes;
