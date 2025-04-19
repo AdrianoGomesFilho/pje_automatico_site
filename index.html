@@ -12,54 +12,64 @@
 <body>
 
     <div class="container">
-        <header class="gif-container">
+        <header class="header-logo">
             <img src="logowide.png" alt="PJE Automático" class="logo">
         </header>
+
         <a href="https://github.com/AdrianoGomesFilho/pje_automatico/releases" 
            target="_blank" 
-           class="download-link" 
+           class="download-button" 
            download 
            title="Clique para baixar a última versão do programa">
             Baixar a última versão do programa (.exe)
         </a>
-        <figure class="gif-explanation">
-            <img src="download.gif" alt="Gif do arquivo para baixar" class="gif">
-        </figure>
-        <p class="prerequisites">Requisitos: Windows e Google Chrome</p>
+        <p id="latest-version-info" class="version-info">Carregando informações da versão...</p>
+        <p class="system-requirements">Requisitos: Windows e Google Chrome</p>
     </div>
         
-    </div>
-
     <div class="container">
-        <section id="problem" class="update-notes">
-            <h2>Problema de "aplicativo não reconhecido"</h2>
-            <p>Este programa pode ser marcado como não reconhecido pelo Windows.  
-            Isso acontece porque ele não tem uma assinatura digital (uma verificação de segurança paga que mostra quem criou o programa). 
-            Por isso, o Windows coloca ele na lista de "aplicativos não confiáveis". <strong>Para solucionar esse problema segue o guia abaixo:</strong></p>
-
+        <section id="download-guide" class="guide-section">
+            <h2>Baixando a versão correta</h2>
+            <p>Para baixar o arquivo correto selecione a opção ".exe" da última versão</p>
+            <figure class="image-guide">
+                <img src="download.png" alt="Guia do arquivo para baixar" class="image-guide-img">
+            </figure>
         </section>
-        <div class="gif-explanation">
+    </div>
+    <div class="container">
+        <section id="unrecognized-app-issue" class="issue-section title-section">
+            <h2>Problema de "aplicativo não reconhecido"</h2>
+            <p>O programa pode ser marcado como não reconhecido pelo sistema, isso acontece porque ele não tem uma assinatura digital (uma verificação de segurança paga que mostra quem criou o programa). Para solucionar siga o passo a passo abaixo</p>
+        </section>
+        <div class="video-container">
             <figure>
-                <img src="execution-guide.gif" alt="Guia para executar o programa">
+                <video controls class="video-fit">
+                    <source src="executando.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
             </figure>
         </div>
-
-        
     </div>
     <div class="container">
-        <section id="about" class="update-notes">
+        <section id="program-origin" class="about-section title-section">
             <h2>Como surgiu o programa?</h2>
             <p>O programa surgiu da necessidade de abrir diversos sistemas do PJe durante a rotina de trabalho como advogado. Um profissional com processos distribuídos por todo o Brasil precisa, diariamente, fazer verdadeiros malabarismos para acessá-los. Essa dificuldade se intensifica ainda mais quando há processos vinculados a outros advogados associados.</p>
         </section>
     </div>
     <div class="container">
-        <footer class="footer">
-            <p class="redes_sociais">Contato: <a href="mailto:adrianogomesfilho98@gmail.com" aria-label="Send an email to contato@pjeautomatico.com">adrianogomesfilho98@gmail.com</a></p>
-            <p class="redes_sociais">
+        <section id="feedback-and-bugs" class="feedback-section title-section">
+            <h2>Como dar sugestões e reportar bugs?</h2>
+            <p>No card abaixo deixo alguns contatos onde você pode sugerir melhorias e indicar algum bug que esteja enfrentando</p>
+        </section>
+    </div>
+    <div class="container">
+        <footer class="site-footer">
+            <p class="contact-info">Contato: <a href="mailto:adrianogomesfilho98@gmail.com" aria-label="Send an email to contato@pjeautomatico.com">adrianogomesfilho98@gmail.com</a></p>
+            <p class="social-links">
                 <a href="https://github.com/AdrianoGomesFilho/pje_automatico" target="_blank" aria-label="Visit the GitHub repository">GitHub</a> |
                 <a href="https://www.instagram.com/adrianogomes.adv/" target="_blank" aria-label="Visit the Instagram page">Instagram</a>
             </p>
-            <p class="redes_sociais">Este software é de código aberto e distribuído sob a licença MIT. Sem garantias implícitas ou explícitas.</p>
+            <p class="license-info">Este software é de código aberto e distribuído sob a licença MIT. Sem garantias implícitas ou explícitas.</p>
         </footer>
     </div>
     <script src="release-notes.js"></script>
