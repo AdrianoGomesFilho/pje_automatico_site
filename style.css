@@ -350,5 +350,5 @@ header h1 {
 }
 
 .nav-button:hover {
-    background-color: #0056b3;
+    background-color: var(--warning-color);
 }
