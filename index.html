@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <meta name="keywords" content="PJE, Automático, Ferramenta, Advogados, Sistemas, Automação, Windows, Google Chrome">
     <meta name="author" content="Adriano Gomes Filho">
     <meta property="og:title" content="PJE Automático">
-    <meta property="og:description" content="Ferramenta para facilitar o acesso aos sistemas do PJE de forma automática.">
+    <meta property="og:description"
+        content="Ferramenta para facilitar o acesso aos sistemas do PJE de forma automática.">
     <meta property="og:image" content="logowide.png">
     <meta property="og:url" content="https://github.com/AdrianoGomesFilho/pje_automatico">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PJE Automático">
-    <meta name="twitter:description" content="Ferramenta para facilitar o acesso aos sistemas do PJE de forma automática.">
+    <meta name="twitter:description"
+        content="Ferramenta para facilitar o acesso aos sistemas do PJE de forma automática.">
     <meta name="twitter:image" content="logowide.png">
     <title>PJE Automático</title>
     <link rel="icon" href="icon.ico" type="image/x-icon">
@@ -32,26 +35,21 @@
     }
     </script>
 </head>
+
 <body>
-    
+
 
     <div class="container">
         <header class="header-logo">
             <img src="logowide.png" alt="PJE Automático" class="logo">
         </header>
 
-        <a href="https://github.com/AdrianoGomesFilho/pje_automatico/releases" 
-           target="_blank" 
-           class="download-button" 
-           download 
-           title="Clique para baixar a última versão do programa (.exe)">
+        <a href="https://github.com/AdrianoGomesFilho/pje_automatico/releases" target="_blank" class="download-button"
+            download title="Clique para baixar a última versão do programa (.exe)">
             Baixar a última versão do programa (.exe)
         </a>
-        <a href="https://drive.google.com/file/d/16aSYdHRAO-SKWyv1Q-RY6zZD3LZ2Zb8Y/view?usp=drive_link" 
-           target="_blank" 
-           class="download-button" 
-           download 
-           title="Clique para baixar o guia rápido em PDF">
+        <a href="https://drive.google.com/file/d/16aSYdHRAO-SKWyv1Q-RY6zZD3LZ2Zb8Y/view?usp=drive_link" target="_blank"
+            class="download-button" download title="Clique para baixar o guia rápido em PDF">
             Baixar guia rápido (PDF)
         </a>
         <p id="latest-version-info" class="version-info">Carregando informações da versão...</p>
@@ -59,53 +57,78 @@
         <p class="system-requirements">Suporte a todos os tribunais trabalhistas e TRF5</p>
     </div>
     <div class="container">
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="#download-guide" class="nav-button">Baixando a versão correta</a></li>
-            <li><a href="#unrecognized-app-issue" class="nav-button">Resolvendo o problema de "aplicativo não reconhecido"</a></li>
-            <li><a href="#program-origin" class="nav-button">Origem do Programa</a></li>
-            <li><a href="#feedback-and-bugs" class="nav-button">Sugestões e Bugs</a></li>
+        <ul class="nav-button">
+            <div>Gostou do PJE Automático? Apoie o projeto via PIX! <br>
+                <strong>Contribuindo você ajuda a manter o desenvolvimento!</strong>
+                <img src="qrcode.png" alt="QR Code para doação via PIX"
+                    style="max-width:150px;display:block;margin:16px auto;">
+
+            </div>
         </ul>
-    </nav>
     </div>
-        
+    <div class="container">
+
+        <nav class="navbar">
+
+            <ul class="nav-list">
+                <li><a href="#download-guide" class="nav-button">Baixando a versão correta</a></li>
+                <li><a href="#unrecognized-app-issue" class="nav-button">Resolvendo o problema de "aplicativo não
+                        reconhecido"</a></li>
+                <li><a href="#program-origin" class="nav-button">Origem do Programa</a></li>
+                <li><a href="#feedback-and-bugs" class="nav-button">Sugestões e Bugs</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="container">
         <section id="download-guide" class="guide-section">
             <h2>Baixando a versão correta</h2>
-            <p>Para baixar o arquivo correto selecione a opção ".exe" da última versão. Você pode usar versões anteriores mas não é recomendado, alguns bugs que já foram corrigidos podem ocorrer.</p>
+            <p>Para baixar o arquivo correto selecione a opção ".exe" da última versão. Você pode usar versões
+                anteriores mas não é recomendado, alguns bugs que já foram corrigidos podem ocorrer.</p>
             <figure class="image-guide">
-                <img src="download.png" alt="Guia visual para selecionar o arquivo correto para download" class="image-guide-img">
+                <img src="download.png" alt="Guia visual para selecionar o arquivo correto para download"
+                    class="image-guide-img">
             </figure>
         </section>
     </div>
     <div class="container">
         <section id="unrecognized-app-issue" class="issue-section title-section">
             <h2>Problema de "aplicativo não reconhecido" ao tentar executar</h2>
-            <p>O programa pode ser marcado como não reconhecido pelo sistema, isso acontece porque ele não tem uma assinatura digital (uma verificação de segurança paga que mostra quem criou o programa). Para solucionar siga o passo a passo no guia rápido em PDF.</p>
+            <p>O programa pode ser marcado como não reconhecido pelo sistema, isso acontece porque ele não tem uma
+                assinatura digital (uma verificação de segurança paga que mostra quem criou o programa). Para solucionar
+                siga o passo a passo no guia rápido em PDF.</p>
         </section>
-        
+
     </div>
     <div class="container">
         <section id="program-origin" class="about-section title-section">
             <h2>Como surgiu o programa?</h2>
-            <p>O programa surgiu da necessidade de abrir diversos sistemas do PJe durante a rotina de trabalho como advogado. Um profissional com processos distribuídos por todo o Brasil precisa, diariamente, fazer verdadeiros malabarismos para acessá-los. Essa dificuldade se intensifica ainda mais quando há processos vinculados a outros advogados associados.</p>
+            <p>O programa surgiu da necessidade de abrir diversos sistemas do PJe durante a rotina de trabalho como
+                advogado. Um profissional com processos distribuídos por todo o Brasil precisa, diariamente, fazer
+                verdadeiros malabarismos para acessá-los. Essa dificuldade se intensifica ainda mais quando há processos
+                vinculados a outros advogados associados.</p>
         </section>
     </div>
     <div class="container">
         <section id="feedback-and-bugs" class="feedback-section title-section">
             <h2>Como dar sugestões e reportar bugs?</h2>
-            <p>No card abaixo deixo alguns contatos onde você pode sugerir melhorias e indicar algum bug que esteja enfrentando</p>
+            <p>No card abaixo deixo alguns contatos onde você pode sugerir melhorias e indicar algum bug que esteja
+                enfrentando</p>
         </section>
     </div>
     <div class="container">
         <footer class="site-footer">
-            <p class="contact-info">Contato: <a href="mailto:adrianogomesfilho98@gmail.com" aria-label="Enviar email para Adriano Gomes Filho">adrianogomesfilho98@gmail.com</a></p>
+            <p class="contact-info">Contato: <a href="mailto:adrianogomesfilho98@gmail.com"
+                    aria-label="Enviar email para Adriano Gomes Filho">adrianogomesfilho98@gmail.com</a></p>
             <p class="social-links">
-                <a href="https://github.com/AdrianoGomesFilho/pje_automatico" target="_blank" aria-label="Visit the GitHub repository">GitHub Adriano Gomes</a>
+                <a href="https://github.com/AdrianoGomesFilho/pje_automatico" target="_blank"
+                    aria-label="Visit the GitHub repository">GitHub Adriano Gomes</a>
             </p>
-            <p class="license-info">Este software é de código aberto e distribuído sob a licença MIT, sem garantias implícitas ou explícitas.</p>
+            <p class="license-info">Este software é de código aberto e distribuído sob a licença MIT, sem garantias
+                implícitas ou explícitas.</p>
         </footer>
     </div>
     <script src="release-notes.js"></script>
 </body>
+
 </html>
